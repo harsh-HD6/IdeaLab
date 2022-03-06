@@ -82,7 +82,7 @@ export default function Footer() {
                                     color:darkTheme?Colors.white :Colors.Black,
                                 }}
                             >
-                                Designed and Developed by Ritik Jain
+                                {/* Designed and Developed by Ritik Jain */}
                             </Typography>
                         </Grid>
                         <Grid item md={4}>
@@ -97,7 +97,7 @@ export default function Footer() {
                             >
                                 {'Copyright © '} {' '}
                                 {new Date().getFullYear()}
-                                {' RJ'}
+                                {' IDEALAB | LNCT'}
                             </Typography>
                         </Grid>
                         <Grid item md={4}>

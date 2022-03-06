@@ -104,7 +104,7 @@ const useStyles = makeStyles(theme => ({
     }
 
     return (
-      <Grid container direction="column"  id='skills'>
+      <Grid container direction="column"  id='skills' style={{marginTop:'2.4em'}}>
 
       <Grid
         item

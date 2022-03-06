@@ -29,6 +29,15 @@
     cursor: pointer;
     position: relative;
   }
+  .card2 {
+    max-width: 39rem;
+    height: 20rem;
+    box-shadow: 0 8px 27px 0 #1976D2  ;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
   .card:hover {
     box-shadow  : 0 4px 4px 6px #1976D2  ;
     overflow: hidden;

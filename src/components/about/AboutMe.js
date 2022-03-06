@@ -63,7 +63,7 @@ function AboutMe(props) {
                   variant="h4"
                   gutterBottom
                 >
-                  Know Who <span style={{color:Colors.blue}}>I'M</span>
+                What  <span style={{color:Colors.blue}}>We're</span>
               </Typography> 
               </Grid>
               <Grid item> 
@@ -71,13 +71,13 @@ function AboutMe(props) {
                   variant="body1"
                   align='center'
                   paragraph
-                  style={{fontWeight:'bold'}}
+                  style={{fontWeight:'bold',fontSize:'1.2em'}}
                 >
-                  Hi,I'm <span style={{color:Colors.blue}}>Ritik Jain</span> . 
-                  A passionate Full Stack Web and  Mobile Developer.
-                  I am having an experience of building Web applications with 
-                  JavaScript / Reactjs / Nodejs and 
-                  some other cool libraries and frameworks.
+                  <span style={{color:Colors.blue}}>IDEA Lab</span> . 
+                   will provide all facilities under one roof, for conversion of an idea into a prototype. The idea
+need not always be new but the emphasis would be on graduating engineers working with their
+hands using equipment, tools and consumables. The focus will be on training students so that they
+become imaginative and creative and stay so at the workplaces they join.
                 </Typography>
               </Grid>
             </Grid>
@@ -91,6 +91,7 @@ function AboutMe(props) {
             </Grid>
           </Grid>
           </Grid>
+          
         <Grid item>
           <TechStack />
         </Grid>
@@ -98,10 +99,10 @@ function AboutMe(props) {
           <ToolStack />
         </Grid>
         <Grid item>
-          <Education />
+          {/* <Education /> */}
         </Grid>
         <Grid item>
-          <Experiences />
+          {/* <Experiences /> */}
         </Grid> 
       </Grid>
     </AnimatedDiv>

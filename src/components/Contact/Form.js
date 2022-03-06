@@ -280,10 +280,10 @@ export default function Form(props) {
                             style={{color:darkTheme?Colors.white :Colors.Black ,fontSize:'1rem'}}    
                         >
                         <a
-                          href="mailto:ritikjain2727@gmail.com"
+                          href="mailto:dhoteharsh5489@gmail.com"
                           style={{ textDecoration: "none", color:darkTheme?Colors.white :Colors.Black }}
                         >
-                          ritikjain2727@gmail.com
+                          dhoteharsh5489@gmail.com
                         </a>
                         </Typography>
                     </Grid>

@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import React  from 'react';
+import React,{useContext}  from 'react';
 import { Typography , Button,useMediaQuery} from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { useTheme } from '@mui/material';
@@ -13,6 +13,41 @@ import { Link } from 'react-router-dom';
 import DisplayLottie from '../displayLottie/DisplayLottie'
 import '../ui/styles.css'
 import { AnimatedDiv } from '../animated';
+import ecommerse from '../../assets/jpgtry.jpg';
+import bankingrj from '../../assets/bankingrj.jpg';
+import ngowf from '../../assets/ngowf.jpg';
+import c1 from '../../assets/c1.png'
+import {DarkThemeContext} from '../../context/DarkThemeContext';
+import FrontCard from '../projectmade/FrontCard'
+import Ideapng  from '../../assets/idea.png'
+
+const data = [
+  { 
+  type: 'Website', 
+  name: "E-commmerce website", 
+  desc: "AICTE | LAB ACTIVITIES", 
+  gitLink: 'https://github.com/ritik2727/ecommerce', 
+  appLink: 'https://ecommerse-ritik2727.vercel.app/', 
+  image: c1
+  },
+  { 
+    type: 'Website', 
+    name: "MAJOR FACILITIES", 
+    desc: "MAJOR FACILITIES", 
+    gitLink: 'https://github.com/ritik2727/Payment_integration',
+     appLink: 'https://donation-two.vercel.app/', 
+     image:ngowf
+  },
+  { 
+    type: 'Website', 
+    name: "ELECTRICAL FACILITIES", 
+    desc: "ELECTRICAL FACILITIES",
+     gitLink: 'https://github.com/ritik2727/BankingSystem', 
+     appLink: 'https://banking-ritik2727.vercel.app/',
+      image: bankingrj
+  },
+  
+]
 
 
 
@@ -138,7 +173,8 @@ function LandingPage(props) {
   const theme = useTheme();
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
-
+  const { dt} = useContext(DarkThemeContext)
+  const [darkTheme] = dt;
     return (
       <AnimatedDiv 
       initial={{ scaleY: 0 }}
@@ -154,7 +190,7 @@ function LandingPage(props) {
         alignItems="center"
         justifyContent='center'
         className={classes.rowContainer}
-        style={{ marginTop: "5em", marginBottom: "5em" }}
+        style={{ marginTop: "9em", marginBottom: "5em" }}
     >
       <Grid 
         item 
@@ -215,6 +251,7 @@ function LandingPage(props) {
                 to='/contact'
                 onClick={() => props.setValue(5)}
               >
+                
                 Contribute Idea
               </Button>
             </AnimatedDiv>
@@ -233,7 +270,7 @@ function LandingPage(props) {
                 className={classes.learnButtonHero}
                 variant="contained"
                 onClick={
-                ()=>window.open('https://drive.google.com/file/d/1pb4AgOyGnazra3Ga9oGC9ej34lN2WAja/view', '_blank')
+               ()=>{console.log("hds")}
                 }
               >
                Contribute Technology
@@ -243,15 +280,54 @@ function LandingPage(props) {
           </Grid>
     </Grid>
       <Grid item container justifyContent={matchesMD ? "center" : "flex-end"} md={5}>
-        {/* <img src={}></img> */}
+        <img src={Ideapng} style={{height:'23em'}}></img>
       </Grid>
     </Grid>
     <Grid item>
       <Skills />
     </Grid>
-    <Proficiency />
+    {/* <Proficiency /> */}
     {/* <ItemCards /> */}
     </Grid>
+     <div style={{justifyContent: 'center',textAlign: 'center'}}>
+       <Typography
+              align={matchesMD ? "center" :'center'}
+              variant="h1"
+              style={{fontFamily: "Pacifico",fontSize:'4rem',paddingTop:'1.7em',
+              paddingBottom:'0.3em',
+              color:darkTheme?Colors.white :Colors.BDark,
+            }}
+              gutterBottom
+              
+            >
+            Features
+            </Typography></div>
+
+    <Grid 
+            item 
+            container 
+            direction={matchesMD ? 'column' : 'row'}
+            alignItems='center' 
+            justifyContent='center' 
+            spacing={7}
+
+        >
+            {data && data.map((item,id) =>(
+                
+                <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
+                  <FrontCard 
+                        key={item.name}
+                        image={item.image} 
+                        type={item.type} 
+                        name={item.name} 
+                        desc={item.desc} 
+                        gitLink={item.gitLink}
+                        appLink={item.appLink}
+                    />       
+                </Grid>
+            ))}      
+          </Grid>
+  
     </AnimatedDiv>
     );
 }
