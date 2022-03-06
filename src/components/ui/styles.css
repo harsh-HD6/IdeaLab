@@ -1,0 +1,102 @@
+.logosvg {
+    /* filter: invert(20%) sepia(79%) saturate(6941%) hue-rotate(356deg) brightness(94%) contrast(121%); */
+    filter: invert(100%) sepia(7%) saturate(757%) hue-rotate(245deg) brightness(116%) contrast(91%);
+    /* filter: invert(40%) sepia(17%) saturate(5582%) hue-rotate(188deg) brightness(88%) contrast(89%); */
+  }
+.imagesvg {
+  filter: invert(71%) sepia(0%) saturate(6266%) hue-rotate(87deg) brightness(80%) contrast(84%);
+}
+.loder {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#1976D2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6600ff;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6600ff;
+  border-radius: 12px;
+}
+
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.close {
+  fill: black;
+}
+.close:hover {
+  fill: green;
+}
+
+.scrollbar-track{
+  background-color: transparent !important;
+}
+
+.scrollbar-track-y{
+  width:2px !important;
+}
+
+
+.scrollbar-thumb{
+  width:2px !important;
+  background-color: black !important;
+  border-radius: 0 !important;
+}
+
