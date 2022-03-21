@@ -3,7 +3,10 @@ import { Typography ,Grid} from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Colors from '../../colors/Colors';
 import { CgCPlusPlus } from "react-icons/cg";
-import { SiExpress,SiRedux,SiNextdotjs,SiMaterialui,SiBootstrap,SiHtml5,SiCss3,SiFirebase,SiJava,SiC } from "react-icons/si";
+import { SiIcloud,SiExpress,SiRedux
+    ,SiNextdotjs,SiMaterialui,SiBootstrap,SiHtml5,
+    SiCss3,SiFirebase,SiJava,SiC,SiAmazondynamodb,
+    SiHomebridge } from "react-icons/si";
 import {
   DiJavascript1,
   DiReact,
@@ -11,6 +14,9 @@ import {
   DiMongodb,
   DiPython,
 } from "react-icons/di";
+import {FaAndroid} from "react-icons/fa";
+import {GiArtificialIntelligence,GiRobotGrab} from "react-icons/gi";
+import {GoCircuitBoard} from "react-icons/go";
 import StackCard from './StackCard';
 
 
@@ -34,23 +40,29 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 const icons = [
-   
-    DiJavascript1 ,
-    DiMongodb,
-    SiExpress,
-    DiReact,
-    DiNodejs,
-    SiRedux,
-    SiNextdotjs,
-    SiFirebase,
-    SiMaterialui,
-    SiBootstrap,
-    SiHtml5,
-    SiCss3,
-    SiC,
-    CgCPlusPlus,
-    DiPython,
-    SiJava,
+    
+    // DiJavascript1 ,
+    // DiMongodb,
+    // SiExpress,
+    // DiReact,
+    // DiNodejs,
+    // SiRedux,
+    // SiNextdotjs,
+    // SiFirebase,
+    // SiMaterialui,
+    // SiBootstrap,
+    // SiHtml5,
+    // SiCss3,
+    // SiC,
+    // CgCPlusPlus,
+    // DiPython,
+    // SiJava,
+    FaAndroid,SiAmazondynamodb,
+    SiIcloud,
+    GiArtificialIntelligence,
+    GoCircuitBoard,
+    SiHomebridge,
+    GiRobotGrab
 
     
   ];

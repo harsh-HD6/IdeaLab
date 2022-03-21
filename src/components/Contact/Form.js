@@ -6,7 +6,7 @@ import { CircularProgress , Snackbar } from "@mui/material";
 import airplane from "../../assets/send.svg";
 import { Mail } from "@mui/icons-material";
 import Colors from "../../colors/Colors";
-
+import qr from '../../assets/qrcode.svg'
 
 const useStyles = makeStyles(theme => ({
   rowContainer: {
@@ -221,6 +221,11 @@ export default function Form(props) {
                 }}
             />
         </Grid>
+                     
+        {/* <div className="card-image" >
+                          <img src={qr} style={{maxWidth: '25%', minWidth: '25%',alignSelf:'center'}}   />
+
+                </div> */}
       </>
   )
   const buttonContents = (
@@ -247,13 +252,14 @@ export default function Form(props) {
     >
        <Grid item>
            <Grid item container  direction='column'  className={classes.rowContainer}>
+
                 <Grid item>
                     <Typography 
                         variant='h2'
                         align={matchesMD ? 'center' : undefined}
                         style={{lineHeight:1}}
                     >
-                        Contact Me
+                        Contact Us
                     </Typography>
                     <Typography
                       align={matchesMD ? "center" : undefined}
@@ -288,6 +294,11 @@ export default function Form(props) {
                         </Typography>
                     </Grid>
                 </Grid>
+             <div className="card-image" >
+                          <img src={qr} style={{maxWidth: '100%', minWidth: '100%',alignSelf:'center'}}   />
+
+                </div>
+           
                 <Grid 
                     item 
                     container
@@ -329,6 +340,7 @@ export default function Form(props) {
                         {buttonContents}
                     
                     </Button>
+
                 </Grid>
            </Grid>
        </Grid>
@@ -374,7 +386,7 @@ export default function Form(props) {
               multiline
               style={{marginTop:'2em'}}
               fullWidth
-              rows={5}
+              rows={3}
               id="message"
               InputProps={{
                 disableUnderline: true ,
@@ -419,6 +431,7 @@ export default function Form(props) {
                 {loading ? <CircularProgress size={30} /> : buttonContents}
               </Button>
             </Grid>
+
           </Grid>
         </DialogContent>
       </Dialog>
@@ -434,6 +447,7 @@ export default function Form(props) {
         autoHideDuration={4000}
         onClose={() => setAlert(false)}
     />
+
 </>
   );
 }

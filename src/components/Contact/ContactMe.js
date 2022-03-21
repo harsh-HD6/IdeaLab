@@ -7,7 +7,7 @@ import mailAnimation from "../../animation/email.json";
 import DisplayLottie from "../displayLottie/DisplayLottie";
 
 import { AnimatedDiv } from "../animated";
-
+  import qr from '../../assets/qrcode.svg'
 export default function ContactMe(props) {
 
   const theme = useTheme();
@@ -21,8 +21,11 @@ export default function ContactMe(props) {
     exit={{ scaleY: 0 }}
     transition={{ duration: 0.3,type: 'spring' }}
   >
+
+   
     <Grid container direction='row' style={{paddingBottom:'3em',marginTop:'3em'}}>
       <Form style={{marginTop:'5em'}} />
+
       <Hidden lgDown>
             <Grid 
                 item 
@@ -37,9 +40,11 @@ export default function ContactMe(props) {
        
                  <Grid item>
                  <DisplayLottie animationData={mailAnimation} />
+   
                 </Grid> 
             </Grid>
         </Hidden>
+
     </Grid>
     </AnimatedDiv>
   );

@@ -60,7 +60,7 @@ function SocialMediaIcon(props) {
             <Fab 
             size={matchesSM ? 'small':'medium' } 
               aria-label="add" 
-              style={{backgroundColor:darkTheme?Colors.white :Colors.Black}}
+              style={{backgroundColor:darkTheme?Colors.Black :Colors.white}}
               className={classes.fab}
               >
             <FontAwesomeIcon 

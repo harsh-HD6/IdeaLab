@@ -48,7 +48,7 @@ function ToolStack(props) {
       >
       <Grid item style={{marginBottom:'1em'}}>
           <Typography  variant='h2' align='center' >
-           <span style={{color:Colors.blue}}>Tools</span> I use</Typography>
+           <span style={{color:Colors.blue}}>Tools</span> We Provide</Typography>
       </Grid>
       <Grid 
           item 
@@ -58,14 +58,14 @@ function ToolStack(props) {
           justifyContent='center' 
           spacing={4}
       >
-          {icons && icons.map((doc,idx) =>(
+          {/* {icons && icons.map((doc,idx) =>(
                 
                 <Grid item key={idx}  >
                    <StackCard
                        icon={icons[idx]} 
                    />
                 </Grid>
-            ))}      
+            ))}       */}
 
       </Grid>
   </Grid>
