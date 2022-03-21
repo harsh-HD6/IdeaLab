@@ -6,8 +6,8 @@ export const Loading = () => {
     <>
       <div className='loder'>
           <XlviLoader
-            className="loaderbolt"
-            boxColors={["#EF4444", "#F59E0B", "#6366F1"]}
+            className="body1"
+            boxColors={["#EFB700", "#008450", "#B81D13"]}
             
           />
         </div>
