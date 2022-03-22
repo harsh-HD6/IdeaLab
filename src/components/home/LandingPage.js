@@ -14,9 +14,13 @@ import DisplayLottie from '../displayLottie/DisplayLottie'
 import '../ui/styles.css'
 import { AnimatedDiv } from '../animated';
 import ecommerse from '../../assets/jpgtry.jpg';
-import bankingrj from '../../assets/bankingrj.jpg';
+
+//images import
+import instrument from '../../assets/instrument.avif';
 import ngowf from '../../assets/ngowf.jpg';
-import c1 from '../../assets/c1.png'
+import c1 from '../../assets/a1.jpg'
+
+
 import {DarkThemeContext} from '../../context/DarkThemeContext';
 import FrontCard from '../projectmade/FrontCard'
 import Ideapng  from '../../assets/idea.png'
@@ -44,7 +48,7 @@ const data = [
     desc: "ELECTRICAL FACILITIES",
      gitLink: 'https://github.com/ritik2727/BankingSystem', 
      appLink: 'https://banking-ritik2727.vercel.app/',
-      image: bankingrj
+      image: instrument
   },
   
 ]
