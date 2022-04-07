@@ -23,19 +23,19 @@ const useStyles = makeStyles(theme => ({
 const icon = [
   {
     icon:faGithub,
-    link:'https://github.com/ritik2727'
+    link:'https://github.com/piyushpp07'
   },
   {
     icon:faLinkedin,
-    link:'https://www.linkedin.com/in/ritik-jain-3b2208217'
+    link:'https://www.linkedin.com/in/harsh-dhote-3a4a15196/'
   },
   {
     icon:faGoogle,
-    link:'mailto:ritikjain2727@gmail.com'
+    link:'mailto:dhoteharsh5489@gmail.com'
   },
   {
     icon:faTwitter,
-    link:'https://twitter.com/Ritik2727'
+    link:'https://twitter.com/'
   }
 ]
 

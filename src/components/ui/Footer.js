@@ -110,7 +110,7 @@ export default function Footer() {
                             >
                                 <Grid item>
                                 <a
-                                    href="https://github.com/ritik2727"
+                                    href="https://github.com/piyushpp07"
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     style={{color:darkTheme?Colors.white :Colors.Black}}
@@ -120,7 +120,7 @@ export default function Footer() {
                                 </Grid>
                                 <Grid item>
                                 <a
-                                    href="https://twitter.com/Ritik2727"
+                                    href="https://twitter.com/"
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     style={{color:darkTheme?Colors.white :Colors.Black}}
@@ -130,7 +130,7 @@ export default function Footer() {
                                 </Grid>
                                 <Grid item>
                                 <a
-                                    href='mailto:ritikjain2727@gmail.com'
+                                    href='mailto:dhoteharsh5489@gmail.com'
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     style={{color:darkTheme?Colors.white :Colors.Black}}
@@ -140,7 +140,7 @@ export default function Footer() {
                                 </Grid>
                                 <Grid item>
                                 <a
-                                    href="https://www.linkedin.com/in/ritik-jain-3b2208217"
+                                    href="https://www.linkedin.com/in/harsh-dhote-3a4a15196/"
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     style={{color:darkTheme?Colors.white :Colors.Black}}
