@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 
-import "./ProjectCard.scss";
-import "./ProjectCard.css";
-import "./ProjectCard.css.map";
+import "./ProjectCard1.scss";
+import "./ProjectCard1.css";
+import "./ProjectCard1.css.map";
 import { Typography } from "@mui/material";
 import PreviewIcon from "@mui/icons-material/Preview";
 import Colors from "../../colors/Colors";
@@ -29,11 +29,11 @@ const ProjectCard = ({ name, desc, image }) => {
           //   backgroundColor: `rgba(255, 255, 255, 0.1)`,
           padding: "2em",
           elevation: "10em",
-          // overflow: " hidden"
+          overflow: " hidden"
         }}
       >
         <div className="card-image">
-          <img src={image} alt={name} />
+          <img src={image} alt={name} style={{backgroundSize:'cover'}} />
 
           <div className="card-title" style={{ backgroundColor: Colors.blue }}>
             <Typography
@@ -63,7 +63,7 @@ const ProjectCard = ({ name, desc, image }) => {
           <Typography
             variant="h6"
             style={{
-              marginTop: 30,
+              marginTop: 25,
               textAlign: "center",
               fontSize: "1rem",
               paddingRight: "1em",

@@ -23,6 +23,23 @@ import c1 from '../../assets/a1.jpg'
 import {DarkThemeContext} from '../../context/DarkThemeContext';
 import FrontCard from '../projectmade/FrontCard'
 import Ideapng  from '../../assets/idea.png'
+import Teamcard from '../Team/Teamcard';
+import hd from '../../assets/hd.jpeg'
+import pp from '../../assets/pp.jpeg'
+const data1=[
+  {
+    image:hd,
+    desg:"Helloo guys",
+    name:"Harshwardhan dhote",
+    id:0
+  },
+  {
+    image:pp,
+    desg:"How you doin",
+    name:"Piyush Paradkar",
+    id:1
+  }
+]
 
 const data = [
   { 
@@ -336,6 +353,46 @@ function LandingPage(props) {
 
             ))}      
           </Grid>
+          <div style={{justifyContent: 'center',textAlign: 'center'}}>
+       <Typography
+              align={matchesMD ? "center" :'center'}
+              variant="h1"
+              style={{fontFamily: "Pacifico",fontSize:'4rem',paddingTop:'1.7em',
+              paddingBottom:'0.3em',
+              color:darkTheme?Colors.white :Colors.BDark,
+            }}
+              gutterBottom
+              
+            >
+            Our Team
+            </Typography></div>
+            <Grid 
+            item 
+            container 
+            direction={matchesMD ? 'column' : 'row'}
+            alignItems='center' 
+            justifyContent='center' 
+            spacing={5}
+
+        >
+            {data1 && data1.map((item,id) =>(
+            
+                 <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
+                  <Teamcard  
+                        key={item.desc}
+                        image={item.image} 
+                        type={item.type} 
+                        name={item.name} 
+                        desg={item.desg} 
+                        id = {item.id}
+                        appLink={item.appLink}
+                    />       
+                </Grid>
+            
+
+            ))}      
+          </Grid>
+
   
     </AnimatedDiv>
     );

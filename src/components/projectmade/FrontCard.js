@@ -26,7 +26,7 @@ const  FrontCard = ({name,desc,image,gitLink,appLink,id}) => {
                   padding: '2em', elevation: '10em',
                 overflow:' hidden'
                 }}>
-                    <div className="card-image"  onClick={()=>navigate('/facilites/'+id,{replace:true})} >
+                    <div className="card-image"  onClick={()=>navigate('/facilites/'+id)} >
                         <img src={image} alt={name}   style={{backgroundSize:'contain'}}  />
                     </div>
                     {/* <div className='card-title'  style={{backgroundColor:Colors.blue}}>

@@ -1,8 +1,8 @@
 import React,{useContext} from 'react';
 
-import './ProjectCard1.scss'
-import './ProjectCard1.css'
-import './ProjectCard1.css.map'
+import './ProjectCard2.scss'
+import './ProjectCard2.css'
+import './ProjectCard2.css.map'
 import {Typography } from '@mui/material';
 import PreviewIcon from '@mui/icons-material/Preview';
 import Colors from '../../colors/Colors';
@@ -13,7 +13,7 @@ import { useTheme,useMediaQuery } from '@mui/material';
 
 
 
-const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
+const  ProjectCard = ({name,desc,image,gitLink,appLink}) => {
     const theme = useTheme();
    
     const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
@@ -23,16 +23,16 @@ const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
   
     return (
 
-        <div  className='card-wrapper'   style={{width:matchesSM?'15em' :'19em'}} >
+        <div style={{width:matchesSM?'18.2em' :'25em'}} className='card-wrapper'>
                 <div className="card" style={{
-                  backgroundColor: `rgba(255, 255, 255)`, 
+                  backgroundColor: `rgba(255, 255, 255, 0.1)`, 
                   padding: '2em', elevation: '10em',
                 overflow:' hidden'
                 }}>
                     <div className="card-image">
                         <img src={image} alt={name}  />
                     </div>
-                    {/* <div className='card-title'  style={{backgroundColor:Colors.blue}}>
+                    <div className='card-title'  style={{backgroundColor:Colors.blue}}>
                       <Typography align='center' variant='h5' 
                         style={{color:Colors.white.replace,
                                 textAlign:'center',
@@ -42,23 +42,20 @@ const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
                         >
                           {name}
                         </Typography>
-                    </div> */}
-                    
-                    {/* <ul className="social-icons">
+                    </div>
+    
+                    <ul className="social-icons">
                         <li><a href={appLink}><PreviewIcon className='fa' /></a></li>
                         <li><a href={gitLink}><i className="fa fa-code"></i></a></li>
-                    </ul> */}
-                    <div className="details" style={{backgroundColor:darkTheme ? Colors.BDark : Colors.white}}>
+                    </ul>
+                    <div className="details" style={{backgroundColor:darkTheme ? Colors.white : Colors.BDark}}>
                         {/* <h2>  */}
                         <Typography 
                         variant='h6'
                         style={{
-                                marginTop:30,textAlign:'center',fontSize:'1.75rem',
+                                marginTop:30,textAlign:'center',fontSize:'1rem',
                                 paddingRight:'1em',paddingLeft:'1em',
-                                color:darkTheme?Colors.white :Colors.BDark,
-                                fontFamily:'Ubuntu',
-                                fontWeight:'bold',
-                                letterSpacing:2,
+                                color:darkTheme?Colors.Black :Colors.white
                             }}
                          >
                         {desc}
@@ -73,4 +70,4 @@ const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
     )
 }
 
-export default FrontCard;
+export default ProjectCard;

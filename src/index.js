@@ -8,10 +8,10 @@ import { BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
      <BrowserRouter>
- <DarkThemeProvider>
-      <App />
- </DarkThemeProvider>
- </BrowserRouter>,
+      <DarkThemeProvider>
+            <App />
+       </DarkThemeProvider>
+     </BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import "./ProjectCard.css.map";
+import "./ProjectCard1.css.map";
 import ecommerse from "../../assets/jpgtry.jpg";
 import bankingrj from "../../assets/bankingrj.jpg";
 import ngowf from "../../assets/ngowf.jpg";
