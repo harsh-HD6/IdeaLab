@@ -38,7 +38,20 @@ const data1=[
     desg:"How you doin",
     name:"Piyush Paradkar",
     id:1
-  }
+  },
+  {
+    image:pp,
+    desg:"How you doin",
+    name:"Piyush Paradkar",
+    id:1
+  },
+  {
+    image:pp,
+    desg:"How you doin",
+    name:"Piyush Paradkar",
+    id:1
+  },
+
 ]
 
 const data = [
@@ -366,7 +379,115 @@ function LandingPage(props) {
             >
             Our Team
             </Typography></div>
+            <div style={{justifyContent: 'center',textAlign: 'center'}}>
+       <Typography
+              align={matchesMD ? "center" :'center'}
+              variant="h2"
+              style={{fontFamily: "gilroy",fontSize:'2rem',paddingTop:'1.7em',
+              paddingBottom:'0.3em',
+              color:darkTheme?Colors.white :Colors.BDark,
+            }}
+              gutterBottom
+              
+            >
+            Idea Team #LNCT
+            </Typography></div>
+
+         
+            
             <Grid 
+            item 
+            container 
+            direction={matchesMD ? 'column' : 'row'}
+            alignItems='center' 
+            justifyContent='center' 
+            spacing={5}
+
+        >
+            {data1 && data1.map((item,id) =>(
+            
+                 <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
+                  <Teamcard  
+                        key={item.desc}
+                        image={item.image} 
+                        type={item.type} 
+                        name={item.name} 
+                        desg={item.desg} 
+                        id = {item.id}
+                        appLink={item.appLink}
+                    />       
+                </Grid>
+            
+
+            ))}      
+          </Grid>
+          <div style={{justifyContent: 'center',textAlign: 'center'}}>
+       <Typography
+              align={matchesMD ? "center" :'center'}
+              variant="h2"
+              style={{fontFamily: "gilroy",fontSize:'2rem',paddingTop:'1.7em',
+              paddingBottom:'0.3em',
+              color:darkTheme?Colors.white :Colors.BDark,
+            }}
+              gutterBottom
+              
+            >
+            Student Ambassadors
+            </Typography></div>
+
+
+
+{/* students  */}
+<Grid 
+            item 
+            container 
+            direction={matchesMD ? 'column' : 'row'}
+            alignItems='center' 
+            justifyContent='center' 
+            spacing={5}
+
+        >
+            {data1 && data1.map((item,id) =>(
+            
+                 <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
+                  <Teamcard  
+                        key={item.desc}
+                        image={item.image} 
+                        type={item.type} 
+                        name={item.name} 
+                        desg={item.desg} 
+                        id = {item.id}
+                        appLink={item.appLink}
+                    />       
+                </Grid>
+            
+
+            ))}      
+          </Grid>
+
+
+
+
+            <div style={{justifyContent: 'center',textAlign: 'center'}}>
+       <Typography
+              align={matchesMD ? "center" :'center'}
+              variant="h2"
+              style={{fontFamily: "gilroy",fontSize:'2rem',paddingTop:'1.7em',
+              paddingBottom:'0.3em',
+              color:darkTheme?Colors.white :Colors.BDark,
+            }}
+              gutterBottom
+              
+            >
+            Support Staff
+            </Typography></div>
+
+
+{/* support  */}
+
+
+
+<Grid 
             item 
             container 
             direction={matchesMD ? 'column' : 'row'}

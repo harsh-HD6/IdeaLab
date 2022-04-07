@@ -197,9 +197,9 @@ and excel in the research field.
         <Grid item>
           <TechStack />
         </Grid>
-        <Grid item>
+        {/* <Grid item>
           <ToolStack />
-        </Grid>
+        </Grid> */}
         <Grid item>
           {/* <Education /> */}
         </Grid>
