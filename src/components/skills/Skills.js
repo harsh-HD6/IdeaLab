@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
 
     const Containerfirst = () =>{
       return(
-      <Grid item sm style ={{paddingLeft:'110px'}} >
+      <Grid item sm style ={{}} >
          <DisplayLottie    height={100}
         width={300}  animationData={TechLab} style={{ maxWidth: "32em", margin: 0,maxHeight: "32em"}} />
       </Grid>

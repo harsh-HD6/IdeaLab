@@ -36,7 +36,7 @@ const Project = lazy(()=>import('./components/projectmade/Project'))
 const ScrollToTop = lazy(()=>import('./components/ui/ScrollToTop'))
 const AboutMe = lazy(()=>import('./components/about/AboutMe'))
 const ScrollTop = lazy(()=>import('./components/ui/ScrollTop'))
-
+const Facilites = lazy(()=>import('./components/aboutSelf/Project'))
 function App(props) {
   const location  = useLocation();
   const [value,setValue] = useState(0);
@@ -92,10 +92,11 @@ function App(props) {
     <Presence exitBeforeEnter >
     <Suspense fallback={<Loading />} >
   <Routes location={location} key={location.key} >
-  <Route exact  path='/'  element={ <LandingPage/>} />
-    <Route exact  path='/projects'  element={<Project />} />
+     <Route exact  path='/'  element={ <LandingPage/>} />
+     <Route exact  path='/projects'  element={<Project />} />
      <Route exact  path='/contact'  element={<ContactMe />} />
      <Route exact  path='/about'  element={<AboutMe />} />
+     <Route exact path = '/facilites/:id'  element={<Facilites/>}/>
   </Routes>
   </Suspense>
   </Presence>

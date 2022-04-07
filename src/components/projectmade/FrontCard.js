@@ -4,23 +4,20 @@ import './ProjectCard.scss'
 import './ProjectCard.css'
 import './ProjectCard.css.map'
 import {Typography } from '@mui/material';
-import PreviewIcon from '@mui/icons-material/Preview';
 import Colors from '../../colors/Colors';
 import { DarkThemeContext } from '../../context/DarkThemeContext';
 import { useTheme,useMediaQuery } from '@mui/material';
+import {  useNavigate } from 'react-router-dom';
 
 
 
-
-
-const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
+const  FrontCard = ({name,desc,image,gitLink,appLink,id}) => {
     const theme = useTheme();
-   
+    const navigate = useNavigate();
     const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
 
-    const { dt} = useContext(DarkThemeContext)
+    const { dt } = useContext(DarkThemeContext)
     const [darkTheme] = dt;
-  
     return (
 
         <div  className='card-wrapper'   style={{width:matchesSM?'15em' :'19em'}} >
@@ -29,13 +26,13 @@ const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
                   padding: '2em', elevation: '10em',
                 overflow:' hidden'
                 }}>
-                    <div className="card-image">
-                        <img src={image} alt={name}  />
+                    <div className="card-image"  onClick={()=>navigate('/facilites/'+id,{replace:true})} >
+                        <img src={image} alt={name}   style={{backgroundSize:'contain'}}  />
                     </div>
                     {/* <div className='card-title'  style={{backgroundColor:Colors.blue}}>
                       <Typography align='center' variant='h5' 
                         style={{color:Colors.white.replace,
-                                textAlign:'center',
+                                textAlign:'center'
                                 paddingTop:'0.6rem',
                                 paddingBottom:'0.6rem'
                                 }}
@@ -48,7 +45,7 @@ const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
                         <li><a href={appLink}><PreviewIcon className='fa' /></a></li>
                         <li><a href={gitLink}><i className="fa fa-code"></i></a></li>
                     </ul> */}
-                    <div className="details" style={{backgroundColor:darkTheme ? Colors.BDark : Colors.white}}>
+                    <div className="details"   style={{backgroundColor:darkTheme ? Colors.BDark : Colors.white}}>
                         {/* <h2>  */}
                         <Typography 
                         variant='h6'
@@ -63,8 +60,7 @@ const  FrontCard = ({name,desc,image,gitLink,appLink}) => {
                          >
                         {desc}
                         </Typography>
-                            {/* <span className="job-title">
-</span> */}
+                            {/* <span className="job-title"></span> */}
                         
                     </div>
                 </div>

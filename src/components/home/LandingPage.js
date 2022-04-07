@@ -13,8 +13,7 @@ import { Link } from 'react-router-dom';
 import DisplayLottie from '../displayLottie/DisplayLottie'
 import '../ui/styles.css'
 import { AnimatedDiv } from '../animated';
-import ecommerse from '../../assets/jpgtry.jpg';
-
+import { useNavigate } from "react-router-dom";
 //images import
 import instrument from '../../assets/instrument.avif';
 import ngowf from '../../assets/ngowf.jpg';
@@ -32,7 +31,8 @@ const data = [
   desc: "AICTE | LAB ACTIVITIES", 
   gitLink: 'https://github.com/ritik2727/ecommerce', 
   appLink: 'https://ecommerse-ritik2727.vercel.app/', 
-  image: c1
+  image: c1,
+  id:0
   },
   { 
     type: 'Website', 
@@ -40,7 +40,8 @@ const data = [
     desc: "MAJOR FACILITIES", 
     gitLink: 'https://github.com/ritik2727/Payment_integration',
      appLink: 'https://donation-two.vercel.app/', 
-     image:ngowf
+     image:ngowf,
+     id: 1
   },
   { 
     type: 'Website', 
@@ -48,7 +49,8 @@ const data = [
     desc: "ELECTRICAL FACILITIES",
      gitLink: 'https://github.com/ritik2727/BankingSystem', 
      appLink: 'https://banking-ritik2727.vercel.app/',
-      image: instrument
+      image: instrument,
+      id:2
   },
   
 ]
@@ -178,6 +180,7 @@ function LandingPage(props) {
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
   const { dt} = useContext(DarkThemeContext)
+  let history = useNavigate();
   const [darkTheme] = dt;
     return (
       <AnimatedDiv 
@@ -317,18 +320,20 @@ function LandingPage(props) {
 
         >
             {data && data.map((item,id) =>(
-                
-                <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
-                  <FrontCard 
+            
+                 <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
+                  <FrontCard  
                         key={item.name}
                         image={item.image} 
                         type={item.type} 
                         name={item.name} 
                         desc={item.desc} 
-                        gitLink={item.gitLink}
+                        id = {item.id}
                         appLink={item.appLink}
                     />       
                 </Grid>
+            
+
             ))}      
           </Grid>
   

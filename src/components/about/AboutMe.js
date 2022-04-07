@@ -110,7 +110,7 @@ function AboutMe(props) {
             variant="body1"
             align='center'
             paragraph
-            style={{ fontWeight: 'bold', fontSize: '1.2em', paddingLeft: '6em',paddingRight: '6em' }}
+            style={{ fontWeight: 'bold', fontSize: '1.2em', paddingLeft: '1em',paddingRight: '1em' }}
           >
             <span style={{ color: Colors.blue }}> We at LNCT </span>
             , believe our first responsibility is to the
@@ -123,7 +123,7 @@ function AboutMe(props) {
             <br />
             <br />
             <br />
-            <div style={{ alignItems: "center", textAlign: 'left', textSizeAdjust: '1em',paddingLeft: '3em',paddingRight:'3em'}}>
+            <div style={{ alignItems: "center", textAlign: 'left', textSizeAdjust: '1em',paddingLeft: '.3em',paddingRight:'.3em'}}>
               <span>
                 1.  To improve continually in the teaching learning process by strengthening
                 infrastructural facilities and faculty
