@@ -21,6 +21,7 @@ import {
 import { Presence } from './components/animated';
 import { Loading } from './components/loading/Loading';
 import './components/ui/styles.css'
+import { Highlight } from '@mui/icons-material';
 // import Project from './components/projectmade/Project';
 
 // import ScrollToTop from './components/ui/ScrollToTop';
@@ -28,7 +29,7 @@ import './components/ui/styles.css'
 
 
 
-
+const Highlights = lazy(()=>import("./components/highlights/Highlights"))
 const Header = lazy(()=>import("./components/ui/Header"))
 const Footer = lazy(()=>import('./components/ui/Footer'))
 const ContactMe = lazy(()=>import('./components/Contact/ContactMe'))
@@ -37,6 +38,7 @@ const ScrollToTop = lazy(()=>import('./components/ui/ScrollToTop'))
 const AboutMe = lazy(()=>import('./components/about/AboutMe'))
 const ScrollTop = lazy(()=>import('./components/ui/ScrollTop'))
 const Facilites = lazy(()=>import('./components/aboutSelf/Project'))
+const Events = lazy(()=>import('./components/Events/Events'))
 function App(props) {
   const location  = useLocation();
   const [value,setValue] = useState(0);
@@ -96,6 +98,8 @@ function App(props) {
      <Route exact  path='/projects'  element={<Project />} />
      <Route exact  path='/contact'  element={<ContactMe />} />
      <Route exact  path='/about'  element={<AboutMe />} />
+     <Route exact  path='/highlights'  element={<Highlights />} />
+     <Route exact  path='/events'  element={<Events />} />
      <Route exact path = '/facilites/:id'  element={<Facilites/>}/>
   </Routes>
   </Suspense>

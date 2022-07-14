@@ -18,8 +18,12 @@ import { useNavigate } from "react-router-dom";
 import instrument from '../../assets/instrument.avif';
 import ngowf from '../../assets/ngowf.jpg';
 import c1 from '../../assets/a1.jpg'
-
-
+import CM from '../../assets/Team/CM.jpg'
+import FC1 from '../../assets/Team/a1.jpg'
+import FC2 from '../../assets/Team/a2.png'
+import SA1 from '../../assets/Team/sa1.png'
+import SA2 from '../../assets/Team/sa2.png'
+import SA3 from '../../assets/Team/sa3.png'
 import {DarkThemeContext} from '../../context/DarkThemeContext';
 import FrontCard from '../projectmade/FrontCard'
 import Ideapng  from '../../assets/idea.png'
@@ -28,32 +32,46 @@ import hd from '../../assets/hd.jpeg'
 import pp from '../../assets/pp.jpeg'
 const data1=[
   {
-    image:hd,
-    desg:"Helloo guys",
-    name:"Harshwardhan dhote",
+    image : CM,
+    desg:"Cheif Mentor",
+    name:"Dr. Vinay Kumar Sahu",
+    id:0
+  },
+]
+const data2=[
+  {
+    image : FC1,
+    desg:"Faculty Coordinator",
+    name:"Dr. Anand Singh",
     id:0
   },
   {
-    image:pp,
-    desg:"How you doin",
-    name:"Piyush Paradkar",
+    image : FC2,
+    desg:"Faculty Coordinator",
+    name:"Manish Khemariya",
     id:1
   },
-  {
-    image:pp,
-    desg:"How you doin",
-    name:"Piyush Paradkar",
-    id:1
-  },
-  {
-    image:pp,
-    desg:"How you doin",
-    name:"Piyush Paradkar",
-    id:1
-  },
-
 ]
-
+const data3  =[
+  {
+    image :SA1,
+    desg:"Student Ambassador",
+    name:"Megha Choubey",
+    id:0
+  },
+  {
+    image : SA2,
+    desg:"Student Ambassador",
+    name:"Harshwardhan Dhote",
+    id:1
+  },
+  {
+    image :SA3,
+    desg:"Student Ambassador",
+    name:"Shivam Chaurivar",
+    id:3
+  },
+]
 const data = [
   { 
   type: 'Website', 
@@ -390,7 +408,7 @@ function LandingPage(props) {
               gutterBottom
               
             >
-            Idea Team #LNCT
+            Chief Mentor 
             </Typography></div>
 
          
@@ -432,7 +450,7 @@ function LandingPage(props) {
               gutterBottom
               
             >
-            Student Ambassadors
+           Faculty Coordinator
             </Typography></div>
 
 
@@ -447,7 +465,7 @@ function LandingPage(props) {
             spacing={5}
 
         >
-            {data1 && data1.map((item,id) =>(
+            {data2 && data2.map((item,id) =>(
             
                  <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
                   <Teamcard  
@@ -479,7 +497,7 @@ function LandingPage(props) {
               gutterBottom
               
             >
-            Support Staff
+            Student Ambassador
             </Typography></div>
 
 
@@ -496,7 +514,7 @@ function LandingPage(props) {
             spacing={5}
 
         >
-            {data1 && data1.map((item,id) =>(
+            {data3 && data3.map((item,id) =>(
             
                  <Grid item key={id} style={{marginTop:'2em',marginBottom:'2em'}}  >
                   <Teamcard  

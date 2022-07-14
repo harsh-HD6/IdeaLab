@@ -266,8 +266,8 @@ export default function Form(props) {
                       variant="body1"
                       style={{ fontSize:'1em', maxWidth:'20em',marginBottom:'1em'}}
                     >
-                      DISCUSS A PROJECT OR JUST WANT TO SAY HI?
-                      MY INBOX IS OPEN FOR ALL.
+                      DISCUSS A PROJECT OR SUBMIT AN IDEA?
+                      OUR INBOX IS OPEN FOR ALL.
                   </Typography>
                 </Grid>
                 <Grid item container style={{marginBottom:'2em'}}>
@@ -286,10 +286,10 @@ export default function Form(props) {
                             style={{color:darkTheme?Colors.white :Colors.Black ,fontSize:'1rem'}}    
                         >
                         <a
-                          href="mailto:dhoteharsh5489@gmail.com"
+                          href="mailto:idealab@lnct.ac.in"
                           style={{ textDecoration: "none", color:darkTheme?Colors.white :Colors.Black }}
                         >
-                          dhoteharsh5489@gmail.com
+                         idealab@lnct.ac.in
                         </a>
                         </Typography>
                     </Grid>
@@ -299,7 +299,7 @@ export default function Form(props) {
 
                 </div>
            
-                <Grid 
+                {/* <Grid 
                     item 
                     container
                     direction='column' 
@@ -341,7 +341,7 @@ export default function Form(props) {
                     
                     </Button>
 
-                </Grid>
+                </Grid> */}
            </Grid>
        </Grid>
     </Grid>
