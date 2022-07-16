@@ -268,9 +268,8 @@ function LandingPage(props) {
                 <Typewriter
                 options={{
                   strings: [
-                    'MP`S first Idea Lab',
+                    'MP`S top ranked Idea Lab',
                     'LNCT BHOPAL'
-               
                     ],
                   autoStart: true,
                   loop: true,
