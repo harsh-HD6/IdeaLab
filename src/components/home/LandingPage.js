@@ -33,7 +33,7 @@ import pp from '../../assets/pp.jpeg'
 const data1=[
   {
     image : CM,
-    desg:"Cheif Mentor",
+    desg:"Chief Mentor",
     name:"Dr. Vinay Kumar Sahu",
     id:0
   },
