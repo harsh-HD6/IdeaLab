@@ -26,28 +26,28 @@ const data = [{
     key : 0
 },{
     data:"Skill Development Program on Laser Cutting and CNC Machining",
-    date:"Start Date : 2021-12-31 | End Date : 2022-01-04",
+    date:"Start Date : 2022-05-04 | End Date : 2022-05-07",
     key : 0
 },{
-    data:"Skill Development Program on Laser Cutting and CNC Machining",
-    date:"Start Date : 2021-12-31 | End Date : 2022-01-04",
+    data:"WORKSHOP ON PRECISION LASER CUTTING USING RDWORKS",
+    date:"Start Date : 2022-06-13 | End Date : 2022-06-15",
     key : 0
 }
 ,{
-    data:"Skill Development Program on Laser Cutting and CNC Machining",
-    date:"Start Date : 2021-12-31 | End Date : 2022-01-04",
+    data:"WORKSHOP ON TINKERCAD",
+    date:"Start Date : 2022-06-15 | End Date : 2022-06-17",
     key : 0
 },{
-    data:"Skill Development Program on Laser Cutting and CNC Machining",
-    date:"Start Date : 2021-12-31 | End Date : 2022-01-04",
+    data:"SKILLING PROGRAM ON RES DESIGN AND IMPLEMENTATION",
+    date:"Start Date : 2022-06-29 | End Date : 2022-06-30",
     key : 0
 },{
-    data:"Skill Development Program on Laser Cutting and CNC Machining",
-    date:"Start Date : 2021-12-31 | End Date : 2022-01-04",
+    data:"Internship on SMART & INTELLIGENT MANUFACTURING",
+    date:"Start Date : 2022-07-01 | End Date : 2022-09-05",
     key : 0
 },{
-    data:"Skill Development Program on Laser Cutting and CNC Machining",
-    date:"Start Date : 2021-12-31 | End Date : 2022-01-04",
+    data:"SCHOOL STUDENTS OPEN DAY ON SMART MANUFACTURING TECHNIQUES",
+    date:"Start Date : 2022-07-04 | End Date : 2022-07-04",
     key : 0
 }]
 const  EventCard = ({name,desc,image,gitLink,appLink}) => {

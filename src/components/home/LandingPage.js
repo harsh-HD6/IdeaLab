@@ -41,14 +41,14 @@ const data1=[
 const data2=[
   {
     image : FC1,
-    desg:"Faculty Coordinator",
+    desg:"Lab Coordinator",
     name:"Dr. Anand Singh",
     id:0
   },
   {
     image : FC2,
-    desg:"Faculty Coordinator",
-    name:"Manish Khemariya",
+    desg:"Co-Coordinator",
+    name:"Dr. Shailendra Dwivedi",
     id:1
   },
 ]
